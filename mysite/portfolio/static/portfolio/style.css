@@ -1,0 +1,324 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+}
+body, html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+div{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+.navbar-container{
+    height: 25%;
+}
+
+nav.navbar{
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    width:100%;
+}
+.nb{
+    width: 100%;
+    font-family: "Helvetica Neue";
+    display:flex;
+}
+ul{
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+li.n{
+    float: left;
+    width: 25%;
+    border-right: 1px solid #ccc;
+}
+li a{
+    display: block;
+    color: rgb(99, 99, 102);
+    border-bottom: 3px solid transparent;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.n:last-child{
+    border-right: none;
+}
+li a:hover{
+    text-decoration: none;
+    border-bottom: 3px solid rgb(99, 99, 102);
+    color: #f68887;
+}
+a.active{
+    color:#5ca2d5;
+    border-bottom: 3px solid #5ca2d5;
+}
+li a:hover.active{
+    color: #5ca2d5;
+    text-decoration: none;
+    border-bottom: 3px solid #5ca2d5;
+}
+
+a.link{
+    z-index: 25;
+    color: #f3d24f;
+    text-decoration: none;
+}
+a.link:hover{
+    color: #f3d24f;
+    text-decoration: none;
+}
+img.pics{
+    width: 100%;
+    max-width: inherit;
+    height: inherit;
+    object-fit: cover;
+    border-radius: 5px 0px 0px 5px;
+}
+
+h2.bTitle{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 5px;
+    padding: auto;
+    width: 100%;
+    color: rgb(99, 99, 102);
+    font-family: "Helvetica Neue";
+}
+h6.bDate{
+    font-size: 10px;
+    float: right;
+    margin-right: 36px;
+    font-family: "Helvetica";
+    font-style: italic;
+    color: rgb(174, 174, 178);
+}
+h6.bText{
+    margin: 36px 36px 20px;
+    word-wrap: break-word;
+    word-break: break-word;
+    font-family: "Helvetica";
+    height: 60%;
+}
+h6.lang{
+    font-family: "Helvetica Neue";
+    float: bottom;
+}
+li.l{
+    float: bottom;
+    display: inline-flex;
+    margin: 8px;
+}
+li.l:first-child{
+    margin-left: 36px;
+}
+ul.lan{
+    margin: 0 auto;
+    float: bottom;
+}
+h6.bLink{
+    font-family: "Helvetica Neue";
+    float: bottom;
+    margin-left: 36px;
+    color: rgb(99, 99, 102);
+}
+a.bLink-L{
+    color:#f68887;
+    font-size: 24px;
+}
+a.bLink-L:hover{
+    color:rgb(99, 99, 102);
+}
+
+.container-fluid{
+    display:flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 0 0 50px;
+    background-color: ghostwhite;
+}
+.flex-column{
+    display: flex;
+    font-size: 0px;
+    background-color: ghostwhite;
+}
+.d-flex{
+    display: flex;
+    font-size: 0px;
+    background-color: ghostwhite;
+}
+h6.white{
+    margin: auto;
+    color: rgb(242, 242, 247);
+    font-family: Monaco;
+}
+h6.color{
+    margin: auto;
+    color: #91ccf4;
+    font-family: Monaco;
+}
+
+h2.quo-icon{
+    text-align: center;
+    color: #91ccf4;
+}
+ul.quote{
+    background: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 2px 4px #ccc;
+    font-family: "Helvetica Neue";
+}
+h1.bigBL{
+    text-align: left;
+    size: 40px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 5px;
+    color: #5ca2d5;
+
+}
+h1.bigBR{
+    text-align: right;
+    size: 40px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-right: 5px;
+    color: #5ca2d5;
+}
+h3.quote-text{
+    color: rgb(72, 72, 74);
+    padding-right: 15px;
+    padding-left: 15px;
+}
+h5.quote-author{
+    color: #f68887;
+    text-shadow: none;
+}
+a.top{
+    color: rgb(72, 72, 74);
+    float: right;
+    text-decoration: none;
+    padding-bottom: 15px;
+    text-shadow: 0px 1px 1px #ccc;
+}
+a.top:hover{
+    color: #f68887;
+    text-decoration: none;
+}
+
+h1.type{
+    margin: 0 auto;
+    width:100%;
+    border-right: solid 30px #91ccf4;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: Monaco;
+    color: #5ca2d5;
+    text-shadow: 0px 1px 1px #ccc;
+}
+
+h1.type2, h1.type3, h1.type4{
+    margin: 0 auto;
+    width:100%;
+    border-right: solid 30px #f3d24f;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: Monaco;
+    color: #f3d24f;
+    text-shadow: 0px 1px 1px #ccc;
+}
+.typewriter {
+    margin: 0 auto;
+    float: left;
+    left: 100%;
+    border-right: solid 10px #e1e0e0;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: "Monaco";
+    color: rgb(242, 242, 247);
+}
+
+/* Typewriter Animations */
+h1.type {
+  animation: animated-text 4s steps(28,end) 1s 1 normal both,
+             animated-cursor 500ms steps(28,end) infinite;
+}
+h1.type2 {
+  animation: animated-text3 3s steps(28,end) 1s 1 normal both,
+             animated-cursor3 500ms steps(28,end) infinite;
+}
+h1.type3 {
+  animation: animated-text4 4s steps(28,end) 1s 1 normal both,
+             animated-cursor4 500ms steps(28,end) infinite;
+}
+h1.type4 {
+  animation: animated-text5 2500ms steps(28,end) 1s 1 normal both,
+             animated-cursor5 500ms steps(28,end) infinite;
+}
+.typewriter {
+  animation: animated-text2 1s steps(28,end) 1s 1 normal both,
+             animated-cursor2 500ms steps(28,end) infinite;
+}
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 650px;}
+}
+@keyframes animated-text2{
+  from{width: 0;}
+  to{width: 6px;}
+}
+@keyframes animated-text3{
+  from{width: 0;}
+  to{width: 472px;}
+}
+@keyframes animated-text4{
+  from{width: 0;}
+  to{width: 596px;}
+}
+@keyframes animated-text5{
+  from{width: 0;}
+  to{width: 300px;}
+}
+
+@keyframes animated-cursor{
+  from{border-right-color: #91ccf4;}
+  to{border-right-color: transparent;}
+}
+@keyframes animated-cursor2{
+  from{border-right-color: rgb(242, 242, 247);}
+  to{border-right-color: transparent;}
+}
+
+@keyframes animated-cursor3{
+  from{border-right-color: #f3d24f;}
+  to{border-right-color: transparent;}
+}
+@keyframes animated-cursor4{
+  from{border-right-color: #f3d24f;}
+  to{border-right-color: transparent;}
+}
+@keyframes animated-cursor5{
+  from{border-right-color: #f3d24f;}
+  to{border-right-color: transparent;}
+}
+
+

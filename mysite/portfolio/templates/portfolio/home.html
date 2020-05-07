@@ -1,0 +1,127 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'portfolio/style.css' %}">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+</head>
+<body>
+<div class="container-fluid" style="z-index: 0">
+    <div class="d-flex flex-column" style="z-index: 1">
+        <a name="top"></a>
+        <div class="navbar-container">
+                <nav class="navbar">
+                    <h5 class="nb">
+                        <ul>
+                            <li class="n"><a class="active"href="{% url 'portfolio:home' %}">/Home</a></li>
+                            <li class="n"><a href="{% url 'portfolio:project' %}">/Projects</a></li>
+                            <li class="n"><a href="{% url 'portfolio:exper' %}">/Experiences</a></li>
+                            <li class="n"><a href="{% url 'portfolio:blog' %}">/Blog</a></li>
+                        </ul>
+                    </h5>
+                </nav>
+            </div>
+        <div class="p-2" style="z-index: 3;">
+            <h1 class="type" style="font-size: 72px;">> Drasti Mehta</h1>
+        </div>
+        <div class="p-2" style="z-index: 4; height: 150%; margin-top: 50px">
+            <div id="outer-rec"
+                 style="width: 100%;
+                        max-width: 800px;
+                        height: 450px;
+                        z-index: 5;
+                        border-radius: 5px;
+                        box-shadow: 4px 4px 20px 4px #ccc;
+                        background: rgb(72, 72, 74)">
+                <h2 style="margin-left: 15px; ">
+                    <span class="dot1"
+                          style="
+                          position: relative;
+                          height: 15px;
+                          width:15px;
+                          background-color: rgb(255, 69, 58);
+                          border-radius: 50%;
+                          box-shadow: inset 0 0 10px rgb(265, 79, 58);
+                          display: inline-block;"></span>
+                    <span class="dot2"
+                          style="
+                          position: relative;
+                          height: 15px;
+                          width:15px;
+                          background-color: rgb(255, 214, 10);
+                          border-radius: 50%;
+                          box-shadow: inset 0 0 10px rgb(265, 224, 10);
+                          display: inline-block;"></span>
+                    <span class="dot3"
+                          style="
+                          position: relative;
+                          height: 15px;
+                          width:15px;
+                          background-color: rgb(60, 215, 75);
+                          box-shadow: inset 0 0 10px rgb(50, 225, 75);
+                          border-radius: 50%;
+                          display: inline-block;"></span>
+
+                </h2>
+                <div id="inner-rec"
+                    style="width: 100%;
+                           height: 100%;
+                           border-radius: 0px 0px 5px 5px;
+                           margin: auto;
+                           z-index: 6;
+                           box-shadow: 4px 4px 8px 0px #ccc;
+                           background: rgb(99, 99, 102)">
+                    <div style="padding-left: 40px; padding-top: 30px; padding-bottom: 30px;">
+                        <h6 class="white">> Drasti.greeting<br></h6>
+                        <h6 class="color">"Hello, I hope you enjoy exploring my website. Check out my projects, experiences, and blog!"<br><br></h6>
+                        <h6 class="white">> Drasti.education<br></h6>
+                        <h6 class="color">"Honours Computer Engineering ('24) - University of Waterloo"<br><br></h6>
+                        <h6 class="white">> Drasti.resume<br></h6>
+                        <h6 class="color">
+                            {% for Resume in resume %}
+                            <a href="{{Resume.pdf_link.url}}" target="_new" class="link">"drastimehta.pdf"</a>
+                            {% endfor %}
+                        <br><br></h6>
+                        <h6 class="white">> Drasti.interests<br></h6>
+                        <h6 class="color">["music", "space exploration", "fashion", "horror movies"]<br><br></h6>
+                        <h6 class="white">> Drasti.contact<br></h6>
+                        <h6 class="color">["<a href="mailto:d36mehta@uwaterloo.ca" target="_new" class="link">d36mehta@uwaterloo.ca</a>",
+                            "<a href="https://www.linkedin.com/in/drasti-mehta/" target="_new" class="link">linkedin</a>",
+                            "<a href="https://twitter.com/drastimehta" target="_new" class="link">twitter</a>",
+                            "<a href="https://github.com/d36mehta" target="_new" class="link">github</a>"]<br><br></h6>
+                        <h6 class="white">> Drasti.goodBye<br></h6>
+                        <h6 class="color">"Scroll down to enjoy some nice quotes. Have a nice day!!"<br><br></h6>
+                        <h6 class="white typewriter">></h6>
+                    </div>
+                </div>
+         </div>
+        </div>
+         <div class="p-2">
+             <div class="qu" style="padding-top: 120px;">
+                 <h2 class="quo-icon">
+                     <svg class="bi bi-chat-square-quote-fill" width="8em" height="6em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                         <path fill-rule="evenodd" d="M0 2a2 2 0 012-2h12a2 2 0 012 2v8a2 2 0 01-2 2h-2.5a1 1 0 00-.8.4l-1.9 2.533a1 1 0 01-1.6 0L5.3 12.4a1 1 0 00-.8-.4H2a2 2 0 01-2-2V2zm7.194 2.766c.087.124.163.26.227.401.428.948.393 2.377-.942 3.706a.446.446 0 01-.612.01.405.405 0 01-.011-.59c.419-.416.672-.831.809-1.22-.269.165-.588.26-.93.26C4.775 7.333 4 6.587 4 5.667 4 4.747 4.776 4 5.734 4c.271 0 .528.06.756.166l.008.004c.169.07.327.182.469.324.085.083.161.174.227.272zM11 7.073c-.269.165-.588.26-.93.26-.958 0-1.735-.746-1.735-1.666 0-.92.777-1.667 1.734-1.667.271 0 .528.06.756.166l.008.004c.17.07.327.182.469.324.085.083.161.174.227.272.087.124.164.26.228.401.428.948.392 2.377-.942 3.706a.446.446 0 01-.613.01.405.405 0 01-.011-.59c.42-.416.672-.831.81-1.22z" clip-rule="evenodd"/>
+                     </svg>
+                 </h2>
+                 <ul class="quote" style="padding-top: 25px;">
+                     {% for Quotes in quotes %}
+                     <h1 class="bigBL">{</h1>
+                     <br>
+                     <h3 class="quote-text">{{Quotes.quote}}</h3><br>
+                     <h5 class="quote-author">> {{Quotes.author}}</h5>
+                     <br>
+                     <h1 class="bigBR">}</h1>
+                     {% endfor %}
+                 </ul>
+                 <h3><a href="#top" class="top">Back to Top</a></h3>
+             </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
